@@ -11,9 +11,20 @@
     <h1 id="title">Title</h1>
     <p id="description">Description</p>
     <form id="survey-form">
-      <input type="text" id="name" name="name" value="" required>
-      <input type="email" id="email" name="email" required>
-      <input type="number" id="number" name="number" required>
+      <label id="name-label" for="name" >Name</label>
+      <input type="text" id="name" name="name" value="" required placeholder="İrfan">
+      <label id="email-label" for="email" >Email</label>
+      <input type="email" id="email" name="email" required placeholder="irfan@gmail.com">
+      <label id="number-label" for="number">Number</label>
+      <input type="number" id="number" name="number" required
+      max=100, min=10 placeholder="789465132"
+      >
+      <select name="cars" id="dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
     </form>
     <!--
 
